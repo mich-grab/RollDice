@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 *{
     box-sizing: border-box;
 
 }
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,6 +14,11 @@ body {
     overflow: hidden;
     margin:0;
 
+}
+
+p {
+    display: flex;
+    justify-content: center;;
 }
 
 .dice-list {
@@ -37,7 +42,7 @@ body {
     width: 100px;
     height: 100px;
     margin-top: 0;
-    background-color: rgb(55, 240, 18);
+    background-color: #a8dadc;
     border: none;
     border-radius: 20px;
     padding: 10px;
@@ -53,22 +58,12 @@ body {
 
 
 .choosen {
-    background-color: rgb(163, 226, 255);
+    background-color: #457b9d;
 }
 
 .dice:hover {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 5px #457b9d;
 }
-
-
-
-
-
-
-
-
-
-
 
 img {
     width: 100px;
@@ -76,31 +71,24 @@ img {
     object-fit: cover;
   }
 
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #roll_dice {
+    background-color: #e63946;
+    
+    width: 160px;
+    height: 50px;
+    border-radius: 30px;
     padding: 5px 10px;
-    border-radius: 5px;
     border: none;
     color: #fff;
 }
 
-#roll_dice:hover{
-    background-color: rgb(0, 247, 255);
-}
 
 #roll_dice:active{
     transform: scale(0.98);
-}
-
-.test {
-    height: 100px;
-    width: 100px;
-    background-color: aquamarine;
-}
-
-.red {
-    background-color: red;
-}
-
-.green {
-    background-color: rgb(8, 233, 20);
 }
