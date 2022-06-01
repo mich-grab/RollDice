@@ -1,5 +1,6 @@
 const rolldiceBtn = document.getElementById('roll_dice')
 const dices = document.querySelectorAll('.dice')
+const logo_cube = document.querySelector('.logo-cube')
 
 function rollDice(numberOfSides) {
 
@@ -58,23 +59,15 @@ rolldiceBtn.addEventListener('click', () => {
     for (const position of dices.keys()) {
 
         if (dices[position].classList.contains('choosen')) {
-            /* console.log(position) */
             dices[position].innerHTML = `${rollDice(position)}`
+            dices[position].classList.add('roll')
+            setTimeout(() => {
+                dices[position].classList.remove('roll')
+            }, 300)
+
+
         }
     }
-
-    /* dices.forEach((diceSc) => {
-        if (diceSc.classList.contains('choosen')) {
-            console.log(dices.keys())
-            diceSc.innerHTML = `${rollDice()}`
-        }
-    }) */
-
-    /*     
-${rollDice()}    
-    const score = rollDice()
-        test.innerHTML = score
-        diceScore.innerHTML = `hello` */
 })
 
 
