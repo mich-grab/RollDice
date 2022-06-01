@@ -127,10 +127,24 @@ p {
     font-size: inherit;
 }
 
+.roll {
+    animation-duration: 0.3s;
+    animation-name: roll;
+}
 
 #roll_dice:active{
     transform: scale(0.98);
 }
+
+@keyframes roll {
+    from {
+      transform: rotateZ(0deg)
+    }
+  
+    to {
+      transform: rotateZ(360deg)
+    }
+  }
 
 @media screen and (max-width: 358px){ 
   .logo-cube {
