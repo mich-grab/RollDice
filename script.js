@@ -61,8 +61,10 @@ rolldiceBtn.addEventListener('click', () => {
         if (dices[position].classList.contains('choosen')) {
             dices[position].innerHTML = `${rollDice(position)}`
             dices[position].classList.add('roll')
+            logo_cube.classList.add('roll')
             setTimeout(() => {
                 dices[position].classList.remove('roll')
+                logo_cube.classList.remove('roll')
             }, 300)
 
 
