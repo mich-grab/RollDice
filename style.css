@@ -37,11 +37,16 @@ p {
     justify-content: center;
 }
 
+.logo-cube-container{
+    width: 50px;
+    height: 50px;
+    transform: translateX(-30px) rotateZ(30deg);
+}
+
 .logo-cube {
     width: 50px;
     height: 50px;
     background-color: #a8dadc;
-    transform: translateX(-30px) rotateZ(30deg);
     border-radius: 10px;
     display: flex;
     align-items: center;
